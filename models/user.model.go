@@ -18,5 +18,5 @@ type User struct {
 	Token         *string            `json:"token"`
 	Refresh_token *string            `json:"refresh_token"`
 	User_type     *string            `json:"user_type" validate:"required, eq=admin|eq=user"`
-	User_id       *string            `json:"user_id"`
+	User_id       string             `json:"user_id"`
 }
